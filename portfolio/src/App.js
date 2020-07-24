@@ -2,6 +2,7 @@ import React from 'react';
 import { Route, Switch, Link } from 'react-router-dom';
 import './style.css';
 
+import Home from './pages/Home.js';
 import Projects from './pages/Projects.js';
 import About from './pages/About.js';
 
@@ -10,7 +11,7 @@ function App() {
     <div className="App">
       <header>
         <div>
-          <p className="title">Shawn Henry</p>
+          <p className="title"><a href="/">Shawn Henry</a></p>
           <p className="title-sub">Full Stack Web Developer</p>
         </div>
         <nav>
@@ -26,6 +27,7 @@ function App() {
         </nav>
       </header>
       <Switch>
+        <Route path="/" exact component={Home} />
         <Route path="/projects" component={Projects}/>
         <Route path="/about" component={About} />
         <Route path="/contact" />

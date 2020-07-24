@@ -3,21 +3,35 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+html {
+    height: 100vh;
+}
+
 button, a {
     cursor: pointer;
 }
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
 ul {
     list-style-position: inside;
 }
 
 body {
-    background: #ececec;
+    background: url('./assets/background-right-sidebar2.jpg');
+    background-repeat: repeat-y;
+    background-position: right;
+    background-size: contain;
 }
 
 .App {
-    width: 70%;
+    // width: 70%;
     margin: 0 auto;
-    background: #fff;
+    // background: #fff;
 }
 
 header, footer {
@@ -28,11 +42,10 @@ header, footer {
     align-items: center;
 
     .title {
-        font-family: 'Rock Salt', Tahoma, cursive;
+        font-family: Helvetica, Tahoma, sans-serif;
         color: #000000;
         font-weight: bold;
         font-size: 30px;
-        line-height: 45px;
     }
 
     nav {
@@ -47,6 +60,11 @@ header, footer {
             border: 0;
             font-size: 17px;
             color: #000;
+
+            &:hover {
+                background: #000;
+                color: #fff;
+            }
         }
 
     }
@@ -81,6 +99,7 @@ section {
 
         img {
             width: 50%;
+            border: 1px solid #e2e2e2;
         }
 
         .container {
