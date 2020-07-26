@@ -5,6 +5,10 @@
 /.pnp
 .pnp.js
 
+# art files
+*.ai
+*.psd
+
 # testing
 /coverage
 
@@ -22,5 +26,3 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 
-.ai
-.psd
