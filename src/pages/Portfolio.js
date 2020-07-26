@@ -1,4 +1,5 @@
 import React from 'react';
+import Library from '../assets/neighborhood-library-show-image.jpg';
 
 const Projects = () => {
     return (
@@ -7,19 +8,23 @@ const Projects = () => {
             <hr />
             <div className="projects">
                 <div className="container">
-                    <img src="/assets/how-to-article-react-postgresql.gif" alt="triangle background" />
+                    <div className="cover">
+                        <img src={Library} alt="neighborhood library summary" />
+                    </div>
                     <div>
                         <h3>Neighborhood Library</h3>
-                        <p>Local book rental project designed for neighbors to share books in their community.
-                        <br/><br/>Technologies Used:</p>
+                        <p>Local book rental project designed for neighbors to share books in their community.</p>
+                        <h4>Technologies Used:</h4>
                         <ul>
                             <li>React</li>
                             <li>OAuth</li>
                             <li>Socket.io</li>
                             <li>PostgreSQL</li>
                         </ul>
-                        <i className="fab fa-github"></i>
-                        <i className="fas fa-sign-in-alt"></i>
+                        <span>
+                            <i className="fab fa-github"></i>
+                            <i className="fas fa-sign-in-alt"></i>
+                        </span>
                     </div>
                 </div>
                 <div className="container">

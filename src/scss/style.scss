@@ -21,14 +21,18 @@ ul {
     list-style-position: inside;
 }
 
+hr {
+    background: linear-gradient(to right, #000, transparent);
+    height: 2px;
+    border: none;
+}
+
 .App {
-    // width: 70%;
     margin: 0 auto;
-    // background: #fff;
 }
 
 header, footer {
-    padding: 50px 100px;
+    padding: 5.0rem 12% 1.0rem;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -94,12 +98,16 @@ footer {
 }
 
 section {
-    padding: 50px 100px;
-    // background: #fff;
+    padding: 1.0rem 12%;
     height: 100%;
-    // border-radius: 20px 20px 20px 20px;
     position: relative;
     overflow: hidden;
+
+    h1 {
+        font-family: 'Sarina', cursive, sans-serif;
+        font-size: 2.5rem;
+        margin-bottom: -12px;
+    }
 
     &.hero-container {
         width: 100%;
@@ -157,8 +165,9 @@ section {
         }
 
         img {
-            width: 50%;
             border: 1px solid #e2e2e2;
+            padding: 0;
+            width: 100%;
         }
 
         .container {
@@ -167,11 +176,32 @@ section {
             padding-top: 50px;
 
             div {
-                width: 50%;
-                padding: 25px 50px;
+                display: flex;
+                flex-flow: column nowrap;
+                justify-content: space-between;
+                width: 100%;
+                padding: 0 20px;
+
+                &.cover {
+                    padding: 0;
+                }
 
                 ul {
                     padding-bottom: 25px;
+
+                    li {
+                        display: inline;
+
+                        &:after {
+                            content: ", "
+                        }
+
+                        &:last-child {
+                            &:after {
+                                content: "";
+                            }
+                        }
+                    }
                 }
             }
         }
