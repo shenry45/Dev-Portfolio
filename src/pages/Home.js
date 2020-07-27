@@ -5,11 +5,13 @@ const Home = () => {
     return (
         <section className="hero-container">
             <div className="hero">
-                <p>Designing visually pleasing designs in the cleanest manner.</p>
+                <p>Producing elegant designs with functionality to back it up.</p>
                 <Link to="/portfolio">
                     <button>My Portfolio</button>
                 </Link>
             </div>
+            <div className="hero-accent img"></div>
+            <div className="hero-accent bg"></div>
         </section>
     )
 }
