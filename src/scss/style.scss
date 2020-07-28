@@ -243,4 +243,39 @@ section {
 
         }
     }
+
+    &.contact {
+        form {
+            display: flex;
+            flex-flow: column nowrap;
+            width: 30%;
+            margin: 0 auto;
+
+            label {
+                font-weight: bold;
+            }
+
+            input {
+                padding: 10px 20px;
+                font-size: 1.2rem;
+                margin-bottom: 1.0rem;
+            }
+
+            button {
+                padding: 1.0rem 2.0rem;
+                color: #fff;
+                border-radius: 6px;
+                background: linear-gradient(0deg, transparent 20%, #232323);
+                background-color: #444;
+                border: 1px solid #757575;
+                font-size: 1.1rem;
+                outline: none;
+                transition: 0.35s;
+
+                &:hover {
+                    background-color: #545454;
+                }
+            }
+        }
+    }
 }

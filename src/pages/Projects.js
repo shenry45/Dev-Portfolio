@@ -19,8 +19,10 @@ const Projects = () => {
                             <h4>Technologies Used:</h4>
                             <ul>
                                 <li>React</li>
+                                <li>Express</li>
                                 <li>OAuth</li>
-                                <li>Socket.io</li>
+                                <li>Passport.js</li>
+                                <li>Socket.IO</li>
                                 <li>PostgreSQL</li>
                             </ul>
                         </div>
