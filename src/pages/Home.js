@@ -6,8 +6,8 @@ const Home = () => {
         <section className="hero-container">
             <div className="hero">
                 <p>Producing elegant designs with functionality to back it up.</p>
-                <Link to="/portfolio">
-                    <button>My Portfolio</button>
+                <Link to="/projects">
+                    <button>My Projects</button>
                 </Link>
             </div>
             <div className="hero-accent img"></div>

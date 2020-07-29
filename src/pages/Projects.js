@@ -11,8 +11,8 @@ const Projects = () => {
                     <div className="cover">
                         <img src={Library} alt="neighborhood library summary" />
                     </div>
-                    <div class="content">
-                        <div class="details">
+                    <div className="content">
+                        <div className="details">
                             <h3>Neighborhood Library</h3>
                             <p>Local book rental project designed for neighbors to share books in their community.</p>
                             <p>My team role was developing the overall UI and getting the backend authentication and FE handling operational. Impliented live chat feature between clients.</p>

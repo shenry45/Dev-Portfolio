@@ -78,11 +78,12 @@ footer {
     flex-flow: column nowrap;
     justify-content: center;
     align-items: flex-end;
-    background: url('../assets/lightrays-footer.svg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: #fff;
-    height: 350px;
+    background-color: #000;
+    padding: 2.0rem 12%;
+    // background: url('../assets/lightrays-footer.svg');
+    // background-size: cover;
+    // background-repeat: no-repeat;
+    // height: 350px;
 
     h4 {
         width: 100%;
@@ -90,11 +91,11 @@ footer {
         font-size: 3.0rem;
         font-family: 'Sarina', cursive;
         text-align: right;
-        mix-blend-mode: exclusion;
+        // mix-blend-mode: exclusion;
     }
     
     i {
-        mix-blend-mode: exclusion;
+        // mix-blend-mode: exclusion;
         color: #fff;
         margin: 0 0.8rem;
         font-size: 2.0rem;
@@ -127,7 +128,7 @@ section {
         .hero-accent.img {
             background: url('../assets/arrows-background-small.png');
             position: absolute;
-            top: 56%;
+            top: 56.2%;
             left: 0;
             z-index: 3;
             height: 50vh;
@@ -179,6 +180,7 @@ section {
 
         p {
             margin-bottom: 1.5rem;
+            text-align: center;
         }
     }
 
@@ -208,14 +210,20 @@ section {
 
         .container {
             display: flex;
-            flex-flow: row nowrap;
+            flex-direction: row;
+            flex-wrap: wrap;
             margin-bottom: 50px;
 
             div {
                 width: 100%;
 
+                &.cover {
+                    flex: 1 0 300px;
+                }
+
                 &.content {
                     display: flex;
+                    flex: 1 0 300px;
                     flex-flow: column nowrap;
                     justify-content: space-between;
                     width: 100%;
@@ -255,7 +263,7 @@ section {
                 font-weight: bold;
             }
 
-            input {
+            input, textarea {
                 padding: 10px 20px;
                 font-size: 1.2rem;
                 margin-bottom: 1.0rem;
@@ -276,6 +284,13 @@ section {
                     background-color: #545454;
                 }
             }
+        }
+
+        .success {
+            background: lightgreen;
+            color: green;
+            border-radius: 10px;
+            border: 2px solid green;
         }
     }
 }
