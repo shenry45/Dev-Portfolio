@@ -287,10 +287,12 @@ section {
         }
 
         .success {
-            background: lightgreen;
+            background: #d5ffd5;
             color: green;
             border-radius: 10px;
             border: 2px solid green;
+            padding: 1.0rem;
+            margin-top: 1.0rem;
         }
     }
 }

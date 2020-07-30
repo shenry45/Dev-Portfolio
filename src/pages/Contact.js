@@ -47,10 +47,8 @@ function Contact() {
                             await emailjs
                                 .send(process.env.REACT_APP_MAIL_SERVICE, process.env.REACT_APP_MAIL_TEMPLATE, {from_name: name, reply_to: email, message_html: message}, process.env.REACT_APP_MAIL_USER)
                                 .then(function(response) {
-                                    console.log('SUCCESS!', response.status, response.text);
                                     setSuccess(true);
                                 }, function(error) {
-                                    console.log('FAILED...', error);
                                     setSuccess(false)
                                 });
                         }}    

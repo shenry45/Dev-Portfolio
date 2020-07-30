@@ -37,16 +37,27 @@ const Projects = () => {
                     </div>
                 </div>
                 <div className="container">
-                    <img src="/assets/triangle-background.jpg" alt="triangle background" />
-                    <div>
-                        <h3>"How To" Database</h3>
-                        <p>Communial sharing of DIY projects for the makers.</p>
-                        <ul>
-                            <li>React</li>
-                            <li>PostgreSQL</li>
-                        </ul>
-                        <i className="fab fa-github"></i>
-                        <i className="fas fa-sign-in-alt"></i>
+                    <div className="cover">
+                        <img src={Library} alt="neighborhood library summary" />
+                    </div>
+                    <div className="content">
+                        <div className="details">
+                            <h3>How-To Database</h3>
+                            <p>Community database of how-to tips and tricks for making everyone's lives easier.</p>
+                            <p>My team role was developing the login and register UI.</p>
+                            <h4>Technologies Used:</h4>
+                            <ul>
+                                <li>React</li>
+                            </ul>
+                        </div>
+                        <span>
+                            <a href="https://github.com/how-to-build" rel="noopener noreferrer" target="_blank">
+                                <i className="fab fa-github"></i>                        
+                            </a>
+                            <a href="https://how-to-db.netlify.app/" rel="noopener noreferrer" target="_blank">
+                                <i className="fas fa-sign-in-alt"></i>
+                            </a>
+                        </span>
                     </div>
                 </div>
             </div>
