@@ -2,6 +2,7 @@ import React from 'react';
 
 import Library from '../assets/neighborhood-library-show-image.jpg';
 import Concerts from '../assets/concert-searcher-show-image.jpg';
+import HowTo from '../assets/how-to-database-show-image.jpg';
 
 const Projects = () => {
     return (
@@ -11,7 +12,7 @@ const Projects = () => {
             <div className="projects">
                 <div className="container">
                     <div className="cover">
-                        <img src={Library} alt="neighborhood library summary" />
+                        <img src={Library} alt="neighborhood library website" />
                     </div>
                     <div className="content">
                         <div className="details">
@@ -40,7 +41,7 @@ const Projects = () => {
                 </div>
                 <div className="container">
                     <div className="cover">
-                        <img src={Concerts} alt="concert searcher summary" />
+                        <img src={Concerts} alt="concert searcher website" />
                     </div>
                     <div className="content">
                         <div className="details">
@@ -66,7 +67,7 @@ const Projects = () => {
                 </div>
                 <div className="container">
                     <div className="cover">
-                        <img src={Library} alt="neighborhood library summary" />
+                        <img src={HowTo} alt="how to database website" />
                     </div>
                     <div className="content">
                         <div className="details">
@@ -75,7 +76,7 @@ const Projects = () => {
                             <p>My team role was developing the login and register UI.</p>
                             <h4>Technologies Used:</h4>
                             <ul>
-                                <li>React</li>
+                                <li>React.js</li>
                             </ul>
                         </div>
                         <span>
