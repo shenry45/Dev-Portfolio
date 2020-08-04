@@ -1,3 +1,5 @@
+$tablet: 800px;
+
 * {
     margin: 0;
     padding: 0;
@@ -6,6 +8,11 @@
 
 html {
     height: 100vh;
+}
+
+p {
+    font-size: 1.2rem;
+    margin-bottom: 1.0rem;
 }
 
 button, a, i {
@@ -65,6 +72,46 @@ header, footer {
             }
         }
 
+        .desktop {
+            @media (min-width: $tablet) {
+                display: flex;
+            }
+            @media (max-width: $tablet) {
+                display: none;
+            }
+        }
+        .mobile {
+            display: none;
+
+            @media (max-width: $tablet) {
+                display: block;
+            }
+
+            .modal-menu {
+                position: fixed;
+                top: 0;
+                left: 0;
+                z-index: 10;
+                display: none;
+                flex-flow: column nowrap;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                background: white;
+
+                @media (max-width: $tablet) {
+                    display: flex;
+                }
+
+                a, button {
+                    width: 100%;
+                    margin: 0;
+                    padding: 1rem 0;
+                    background-color: #cacaca;
+                }
+            }
+        }
     }
 }
 
@@ -125,6 +172,11 @@ section {
         left: 0;
         z-index: 4;
 
+        @media (max-width: $tablet) {
+            padding-left: 0;
+            padding-right: 0;
+        }
+
         .hero-accent.img {
             background: url('../assets/arrows-background-small.png');
             position: absolute;
@@ -161,6 +213,12 @@ section {
             position: relative;
             z-index: 4;
 
+            p {
+                @media (max-width: $tablet) {
+                    width: 70%;
+                }
+            }
+
             button {
                 padding: 1.0rem 2.0rem;
                 color: #fff;
@@ -189,12 +247,12 @@ section {
         flex-flow: column nowrap;
         z-index: 3;
         
-        h3 {
+        h2 {
             margin-bottom: 1.0rem;
         }
 
         p {
-            margin-bottom: 1.0rem;
+            font-size: 1.1rem;
         }
 
         i {
@@ -219,6 +277,10 @@ section {
 
                 &.cover {
                     flex: 1 0 300px;
+
+                    @media (max-width: $tablet) {
+                        flex: 1 0 200px;
+                    }
                 }
 
                 &.content {
@@ -227,7 +289,12 @@ section {
                     flex-flow: column nowrap;
                     justify-content: space-between;
                     width: 100%;
-                    padding: 0 20px;
+                    padding: 20px;
+
+                    @media (max-width: $tablet) {
+                        padding: 0;
+                        flex: 1 0 200px;
+                    }
     
                     ul {
                         padding-bottom: 25px;
@@ -252,12 +319,59 @@ section {
         }
     }
 
+    &.about {
+        .container {
+            display: flex;
+            flex-flow: row nowrap;
+
+            @media (max-width: $tablet) {
+                flex-flow: wrap;
+                justify-content: center;
+            }
+
+            img {
+                margin-bottom: 1.0rem;
+            }
+
+            div.details {
+                padding-left: 2.0rem;
+
+                @media (max-width: $tablet) {
+                    padding: 0;
+                }
+            }
+
+            i {
+                margin-right: 1.0rem;
+                margin-bottom: 1.0rem;
+                padding: 0.5rem 1.0rem;
+                background: #f1f1f1;
+                border-radius: 20px;
+                border: 1px solid #e0e0e0;
+                color: #636363;
+                cursor: default;
+
+                &::before {
+                    margin-right: 1.0rem;
+                }
+            }
+        }
+
+        @media screen {
+            flex-wrap: wrap;
+        }
+    }
+
     &.contact {
         form {
             display: flex;
             flex-flow: column nowrap;
             width: 30%;
             margin: 0 auto;
+
+            @media (max-width: $tablet) {
+                width: 80%;
+            }
 
             label {
                 font-weight: bold;
@@ -267,6 +381,8 @@ section {
                 padding: 10px 20px;
                 font-size: 1.2rem;
                 margin-bottom: 1.0rem;
+
+                
             }
 
             button {
