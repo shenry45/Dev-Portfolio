@@ -11,9 +11,7 @@ const Projects = () => {
             <hr />
             <div className="projects">
                 <div className="container">
-                    <div className="cover">
-                        <img src={Library} alt="neighborhood library website" />
-                    </div>
+                    <div className="cover"><img src={Library} alt="neighborhood library website" /></div>
                     <div className="content">
                         <div className="details">
                             <h2>Neighborhood Library</h2>

@@ -32,7 +32,10 @@ hr {
     background: linear-gradient(to right, #000, transparent);
     height: 2px;
     border: none;
-    margin-bottom: 2.0rem;
+    margin-bottom: 1.5rem;
+}
+img {
+    display: block;
 }
 
 .App {
@@ -40,7 +43,7 @@ hr {
 }
 
 header, footer {
-    padding: 2.0rem 12% 1.0rem;
+    padding: 2.0rem 12% 0;
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -51,6 +54,7 @@ header, footer {
         color: #000000;
         font-weight: bold;
         font-size: 30px;
+        margin-bottom: 0px;
     }
 
     nav {
@@ -108,7 +112,13 @@ header, footer {
                     width: 100%;
                     margin: 0;
                     padding: 1rem 0;
-                    background-color: #cacaca;
+                    font-size: 2.0rem;
+
+                    &:hover, &:active, &:focus {
+                        background-color: #000;
+                        color: #fff;
+                        outline: none;
+                    }
                 }
             }
         }
@@ -270,30 +280,32 @@ section {
             display: flex;
             flex-direction: row;
             flex-wrap: wrap;
-            margin-bottom: 50px;
+            margin-bottom: 1.5rem;
 
             div {
                 width: 100%;
 
                 &.cover {
-                    flex: 1 0 300px;
+                    width: 50%;
+                    min-width: 240px;
 
                     @media (max-width: $tablet) {
-                        flex: 1 0 200px;
+                        width: 100%;
+                        margin-bottom: 1.5rem;
                     }
                 }
 
                 &.content {
                     display: flex;
-                    flex: 1 0 300px;
                     flex-flow: column nowrap;
                     justify-content: space-between;
-                    width: 100%;
+                    width: 50%;
+                    min-width: 240px;
                     padding: 20px;
 
                     @media (max-width: $tablet) {
                         padding: 0;
-                        flex: 1 0 200px;
+                        width: 100%;
                     }
     
                     ul {
@@ -330,11 +342,16 @@ section {
             }
 
             img {
-                margin-bottom: 1.0rem;
+                @media (max-width: $tablet) {
+                    margin-bottom: 1.5rem;
+                }
             }
 
             div.details {
-                padding-left: 2.0rem;
+                display: flex;
+                flex-flow: column nowrap;
+                padding-left: 1.5rem;
+                min-width: 240px;
 
                 @media (max-width: $tablet) {
                     padding: 0;
@@ -342,8 +359,8 @@ section {
             }
 
             i {
-                margin-right: 1.0rem;
-                margin-bottom: 1.0rem;
+                margin-right: 1.5rem;
+                margin-bottom: 1.5rem;
                 padding: 0.5rem 1.0rem;
                 background: #f1f1f1;
                 border-radius: 20px;
@@ -352,21 +369,43 @@ section {
                 cursor: default;
 
                 &::before {
-                    margin-right: 1.0rem;
+                    margin-right: 1.5rem;
+                }
+
+                span {
+                    font-weight: normal;
                 }
             }
-        }
-
-        @media screen {
-            flex-wrap: wrap;
+            
+            @media (max-width: $tablet) {
+                flex-flow: wrap;
+            }
         }
     }
 
     &.contact {
+        .container {
+            display: flex;
+            flex-flow: row wrap;
+
+            div {
+                width: 50%;
+                padding: 1.5rem;
+                
+                @media (max-width: $tablet) {
+                    width: 100%;
+                    padding: 1.5rem 0;
+                }
+
+                &.details {
+                    background: linear-gradient(to bottom right, white, #e8e8e8);
+                }
+            }
+        }
+
         form {
             display: flex;
             flex-flow: column nowrap;
-            width: 30%;
             margin: 0 auto;
 
             @media (max-width: $tablet) {
