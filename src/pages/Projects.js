@@ -57,7 +57,7 @@ const Projects = () => {
                             <a href="https://github.com/shenry45/BlackBox" rel="noopener noreferrer" target="_blank">
                                 <i className="fab fa-github"></i>                        
                             </a>
-                            <a href="#" rel="noopener noreferrer" target="_blank">
+                            <a href="https://black-box-concerts.netlify.app/" rel="noopener noreferrer" target="_blank">
                                 <i className="fas fa-sign-in-alt"></i>
                             </a>
                         </span>
