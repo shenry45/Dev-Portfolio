@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b8561c83.chunk.css",
+    "main.js": "/static/js/main.c7f14174.chunk.js",
+    "main.js.map": "/static/js/main.c7f14174.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.ceaf4b5f.js",
+    "runtime-main.js.map": "/static/js/runtime-main.ceaf4b5f.js.map",
+    "static/js/2.3c1cc40c.chunk.js": "/static/js/2.3c1cc40c.chunk.js",
+    "static/js/2.3c1cc40c.chunk.js.map": "/static/js/2.3c1cc40c.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.cacb2ea2dac825c472745321adbd99a7.js": "/precache-manifest.cacb2ea2dac825c472745321adbd99a7.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.b8561c83.chunk.css.map": "/static/css/main.b8561c83.chunk.css.map",
+    "static/js/2.3c1cc40c.chunk.js.LICENSE.txt": "/static/js/2.3c1cc40c.chunk.js.LICENSE.txt",
+    "static/media/about-shawn-henry-portrait.jpg": "/static/media/about-shawn-henry-portrait.9849e15e.jpg",
+    "static/media/concert-searcher-show-image.jpg": "/static/media/concert-searcher-show-image.a3911117.jpg",
+    "static/media/combined.scss": "/static/media/full-stack-developer-text.03c5c94a.svg",
+    "static/media/how-to-database-show-image.jpg": "/static/media/how-to-database-show-image.c26f425a.jpg",
+    "static/media/neighborhood-library-show-image.jpg": "/static/media/neighborhood-library-show-image.21ffce0f.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.ceaf4b5f.js",
+    "static/js/2.3c1cc40c.chunk.js",
+    "static/css/main.b8561c83.chunk.css",
+    "static/js/main.c7f14174.chunk.js"
+  ]
+}
