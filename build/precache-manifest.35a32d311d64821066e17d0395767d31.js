@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3b637827b09f2b4f9422344f0ccc0c17",
+    "revision": "bafbb0718edb3f74c0b818d5dd054153",
     "url": "/index.html"
   },
   {
-    "revision": "d423f3005678556b88a6",
+    "revision": "99ba33d8f2ac48a9308b",
     "url": "/static/css/main.0333697d.chunk.css"
   },
   {
-    "revision": "0e1f68769fd920c908ca",
-    "url": "/static/js/2.3c1cc40c.chunk.js"
+    "revision": "a4f7ae4bba1360b07c99",
+    "url": "/static/js/2.5ae615c4.chunk.js"
   },
   {
     "revision": "c64c486544348f10a6d6c716950bc223",
-    "url": "/static/js/2.3c1cc40c.chunk.js.LICENSE.txt"
+    "url": "/static/js/2.5ae615c4.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d423f3005678556b88a6",
-    "url": "/static/js/main.c7f14174.chunk.js"
+    "revision": "99ba33d8f2ac48a9308b",
+    "url": "/static/js/main.f03ed72c.chunk.js"
   },
   {
-    "revision": "5284eec07972ace79c95",
-    "url": "/static/js/runtime-main.ceaf4b5f.js"
+    "revision": "4f2b1704eab49d50853b",
+    "url": "/static/js/runtime-main.19ccc7f6.js"
   },
   {
     "revision": "9849e15ea586f8967fad1c021082dbd8",
@@ -32,12 +32,16 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/media/concert-searcher-show-image.a3911117.jpg"
   },
   {
+    "revision": "554bed423063d4efbfd4f2f080ebc582",
+    "url": "/static/media/elegant-vehicle-website-image.554bed42.jpg"
+  },
+  {
     "revision": "03c5c94aca3781aaa17f93b4daf16ce6",
     "url": "/static/media/full-stack-developer-text.03c5c94a.svg"
   },
   {
-    "revision": "c26f425a996e47676445cd66ec4a76f4",
-    "url": "/static/media/how-to-database-show-image.c26f425a.jpg"
+    "revision": "6d2c0bb460773065977d359d2420f689",
+    "url": "/static/media/jet-ski-parts-image.6d2c0bb4.jpg"
   },
   {
     "revision": "21ffce0fffb4bfb9cb32a888591882c9",
