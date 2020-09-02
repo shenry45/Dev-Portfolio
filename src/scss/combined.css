@@ -1,0 +1,561 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+html {
+  height: 100vh;
+}
+
+body, div, input, form, textarea, li, h1, h2, h3, h4, h5, h6, p, aside, label, span, a {
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+p {
+  font-size: 1.2rem;
+  margin-bottom: 1.0rem;
+}
+
+button, a, i {
+  cursor: pointer;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+hr {
+  background: -webkit-gradient(linear, left top, right top, from(#000), to(transparent));
+  background: linear-gradient(to right, #000, transparent);
+  height: 2px;
+  border: none;
+  margin-bottom: 1.5rem;
+}
+
+img {
+  display: block;
+}
+
+.App {
+  margin: 0 auto;
+}
+
+header, footer {
+  padding: 2.0rem 12% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header .title, footer .title {
+  font-family: Helvetica, Tahoma, sans-serif;
+  color: #000000;
+  font-weight: bold;
+  font-size: 30px;
+  margin-bottom: 0px;
+}
+
+header nav, footer nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+header nav button, footer nav button {
+  margin-left: 10px;
+  padding: 10px 20px;
+  background: transparent;
+  border-radius: 5px;
+  border: 0;
+  font-size: 17px;
+  color: #000;
+}
+
+header nav button:hover, footer nav button:hover {
+  background: #000;
+  color: #fff;
+}
+
+@media (min-width: 800px) {
+  header nav .desktop, footer nav .desktop {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  header nav .desktop, footer nav .desktop {
+    display: none;
+  }
+}
+
+header nav .mobile, footer nav .mobile {
+  display: none;
+}
+
+@media (max-width: 800px) {
+  header nav .mobile, footer nav .mobile {
+    display: block;
+  }
+}
+
+header nav .mobile .modal-menu, footer nav .mobile .modal-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  display: none;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 100%;
+  height: 100vh;
+  background: white;
+}
+
+@media (max-width: 800px) {
+  header nav .mobile .modal-menu, footer nav .mobile .modal-menu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+header nav .mobile .modal-menu a, header nav .mobile .modal-menu button, footer nav .mobile .modal-menu a, footer nav .mobile .modal-menu button {
+  width: 100%;
+  margin: 0;
+  padding: 1rem 0;
+  font-size: 2.0rem;
+}
+
+header nav .mobile .modal-menu a:hover, header nav .mobile .modal-menu a:active, header nav .mobile .modal-menu a:focus, header nav .mobile .modal-menu button:hover, header nav .mobile .modal-menu button:active, header nav .mobile .modal-menu button:focus, footer nav .mobile .modal-menu a:hover, footer nav .mobile .modal-menu a:active, footer nav .mobile .modal-menu a:focus, footer nav .mobile .modal-menu button:hover, footer nav .mobile .modal-menu button:active, footer nav .mobile .modal-menu button:focus {
+  background-color: #000;
+  color: #fff;
+  outline: none;
+}
+
+header {
+  position: relative;
+  z-index: 5;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background-color: #000;
+  padding: 2.0rem 12%;
+}
+
+footer h4 {
+  width: 100%;
+  color: #fff;
+  font-size: 3.0rem;
+  font-family: 'Sarina', cursive;
+  text-align: right;
+}
+
+footer i {
+  color: #fff;
+  margin: 0 0.8rem;
+  font-size: 2.0rem;
+}
+
+section {
+  padding: 4.0rem 12%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+section h1 {
+  font-family: 'Sarina', cursive, sans-serif;
+  font-size: 2.5rem;
+}
+
+section.hero-container {
+  width: 100%;
+  height: 100vh;
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(50%, #fff), color-stop(50%, #000));
+  background: linear-gradient(to bottom, #fff 50%, #000 50%);
+  background-attachment: scroll;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 4;
+}
+
+@media (max-width: 800px) {
+  section.hero-container {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
+
+section.hero-container .hero-accent.img {
+  background: url("../assets/arrows-background-small.png");
+  position: absolute;
+  top: 56.2%;
+  left: 0;
+  z-index: 3;
+  height: 50vh;
+  width: 100%;
+}
+
+section.hero-container .hero-accent.bg {
+  background: -webkit-gradient(linear, left bottom, right top, from(#151515), color-stop(#000), to(#363636));
+  background: linear-gradient(to top right, #151515, #000, #363636);
+  position: absolute;
+  top: 50%;
+  left: 0;
+  z-index: 2;
+  height: 50vh;
+  width: 100%;
+}
+
+section.hero-container .hero {
+  background: url("../assets/full-stack-developer-text.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  color: #fff;
+  mix-blend-mode: exclusion;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-bottom: 10%;
+  position: relative;
+  z-index: 4;
+}
+
+@media (max-width: 800px) {
+  section.hero-container .hero p {
+    width: 70%;
+  }
+}
+
+section.hero-container .hero button {
+  padding: 1.0rem 2.0rem;
+  color: #fff;
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, transparent), to(#232323));
+  background: linear-gradient(0deg, transparent 20%, #232323);
+  background-color: #444;
+  border: 1px solid #757575;
+  font-size: 1.1rem;
+  outline: none;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+section.hero-container .hero button:hover {
+  background-color: #545454;
+}
+
+section.hero-container p {
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+section .projects {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  z-index: 3;
+}
+
+section .projects h2 {
+  margin-bottom: 1.0rem;
+}
+
+section .projects p {
+  font-size: 1.1rem;
+}
+
+section .projects i {
+  margin-right: 25px;
+  font-size: 30px;
+}
+
+section .projects img {
+  border: 1px solid #e2e2e2;
+  padding: 0;
+  width: 100%;
+}
+
+section .projects .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+section .projects .container div {
+  width: 100%;
+}
+
+section .projects .container div.cover {
+  width: 50%;
+  min-width: 240px;
+}
+
+@media (max-width: 800px) {
+  section .projects .container div.cover {
+    width: 100%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+section .projects .container div.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 50%;
+  min-width: 240px;
+  padding: 20px;
+}
+
+@media (max-width: 800px) {
+  section .projects .container div.content {
+    padding: 0;
+    width: 100%;
+  }
+}
+
+section .projects .container div.content ul {
+  padding-bottom: 25px;
+}
+
+section .projects .container div.content ul li {
+  display: inline;
+}
+
+section .projects .container div.content ul li:after {
+  content: ", ";
+}
+
+section .projects .container div.content ul li:last-child:after {
+  content: "";
+}
+
+section.about .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+}
+
+@media (max-width: 800px) {
+  section.about .container {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 800px) {
+  section.about .container img {
+    margin-bottom: 1.5rem;
+  }
+}
+
+section.about .container div.details {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  padding-left: 1.5rem;
+  min-width: 240px;
+}
+
+@media (max-width: 800px) {
+  section.about .container div.details {
+    padding: 0;
+  }
+}
+
+section.about .container i {
+  margin-right: 1.5rem;
+  margin-bottom: 1.5rem;
+  padding: 0.5rem 1.0rem;
+  background: #f1f1f1;
+  border-radius: 20px;
+  border: 1px solid #e0e0e0;
+  color: #636363;
+  cursor: default;
+}
+
+section.about .container i::before {
+  margin-right: 1.5rem;
+}
+
+section.about .container i span {
+  font-weight: normal;
+}
+
+@media (max-width: 800px) {
+  section.about .container {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+}
+
+section.contact .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row wrap;
+          flex-flow: row wrap;
+}
+
+section.contact .container div {
+  width: 50%;
+  padding: 1.5rem;
+}
+
+@media (max-width: 800px) {
+  section.contact .container div {
+    width: 100%;
+    padding: 1.5rem 0;
+  }
+}
+
+section.contact .container div.details {
+  background: -webkit-gradient(linear, left top, right bottom, from(white), to(#e8e8e8));
+  background: linear-gradient(to bottom right, white, #e8e8e8);
+}
+
+section.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  margin: 0 auto;
+}
+
+@media (max-width: 800px) {
+  section.contact form {
+    width: 80%;
+  }
+}
+
+section.contact form label {
+  font-weight: bold;
+}
+
+section.contact form input, section.contact form textarea {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  margin-bottom: 1.0rem;
+}
+
+section.contact form button {
+  padding: 1.0rem 2.0rem;
+  color: #fff;
+  border-radius: 6px;
+  background: -webkit-gradient(linear, left bottom, left top, color-stop(20%, transparent), to(#232323));
+  background: linear-gradient(0deg, transparent 20%, #232323);
+  background-color: #444;
+  border: 1px solid #757575;
+  font-size: 1.1rem;
+  outline: none;
+  -webkit-transition: 0.35s;
+  transition: 0.35s;
+}
+
+section.contact form button:hover {
+  background-color: #545454;
+}
+
+section.contact .success {
+  background: #d5ffd5;
+  color: green;
+  border-radius: 10px;
+  border: 2px solid green;
+  padding: 1.0rem;
+  margin-top: 1.0rem;
+}
+/*# sourceMappingURL=combined.css.map */
