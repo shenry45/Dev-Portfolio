@@ -14,6 +14,7 @@ const HomeVersion2 = () => {
             <Story />
             <Experience />
             <Social />
+            <p className="blank"></p>
         </div>
     )
 }
