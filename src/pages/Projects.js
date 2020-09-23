@@ -56,7 +56,7 @@ const Projects = () => {
                             <a href="https://github.com/shenry45/MotoElegance" rel="noopener noreferrer" target="_blank">
                                 <i className="fab fa-github"></i>                        
                             </a>
-                            <a rel="noopener noreferrer" target="_blank">
+                            <a href="/" rel="noopener noreferrer" target="_blank">
                                 <i className="fas fa-sign-in-alt"></i>
                             </a>
                         </span>

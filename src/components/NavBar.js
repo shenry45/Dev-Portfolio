@@ -1,6 +1,8 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+import MenuIcon from '../assets/menu-icon.svg';
+
 const NavBar = () => {
     const [menu, toggleMenu] = useState(false);
 
@@ -19,7 +21,7 @@ const NavBar = () => {
             </div>
             <div className="mobile">
                 <button onClick={() => toggleMenu(!menu)}>
-                    <i class="fas fa-ellipsis-v"></i>
+                    <img src={MenuIcon} alt="menu icon" />
                 </button>
                 { menu ?
                         <div className="modal-menu">
@@ -39,6 +41,6 @@ const NavBar = () => {
             </div>
         </nav>
     )
-}
+};
 
 export default NavBar;

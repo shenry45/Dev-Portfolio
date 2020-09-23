@@ -1,13 +1,14 @@
 import React from 'react';
 import { Route, Switch } from 'react-router-dom';
-import './scss/combined.scss';
+import './style.scss';
 
-import Home from './pages/Home.js';
+// import Home from './pages/Home.js';
+import HomeV2 from './pages/Home2.js';
 import Projects from './pages/Projects.js';
 import About from './pages/About.js';
 import Contact from './pages/Contact.js';
 
-import Footer from './components/Footer.js';
+// import Footer from './components/Footer.js';
 import Header from './components/Header.js';
 
 function App() {
@@ -15,12 +16,12 @@ function App() {
     <div className="App">
       <Header />
       <Switch>
-        <Route path="/" exact component={Home} />
+        <Route path="/" exact component={HomeV2} />
         <Route path="/projects" component={Projects}/>
         <Route path="/about" component={About} />
         <Route path="/contact" component={Contact}/>
       </Switch>
-      <Footer />
+      {/* <Footer /> */}
     </div>
   );
 }
