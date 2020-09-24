@@ -29,6 +29,14 @@ button, a, i {
   font-weight: bold;
 }
 
+button {
+  padding: 10px 40px;
+  background: #00A3FF;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -70,6 +78,9 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   background: #fff;
   border-top: 1px solid #8D8D8D;
 }
@@ -86,6 +97,53 @@ header p.title a {
 header button {
   background: none;
   border: none;
+  padding: 0;
+}
+
+header div.modal-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  width: 100%;
+  height: 300px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+}
+
+header div.modal-menu.closed {
+  height: 0px;
+}
+
+header div.modal-menu a {
+  width: 100%;
+}
+
+header div.modal-menu button {
+  width: 100%;
+  padding: 10px;
+  font-size: 36px;
+  text-align: left;
+  color: #000;
+  border-top: 2px solid #c4c4c4;
+  text-align: left;
+  background: #fff;
+  border-radius: 0;
+}
+
+header div.modal-menu img {
+  text-align: right;
+  width: 70px;
+  padding: 10px 25px;
+  background: #474747;
+  margin-bottom: 0;
 }
 
 .App {
@@ -122,11 +180,6 @@ header button {
 
 .hero button {
   float: right;
-  padding: 10px 40px;
-  background: #00A3FF;
-  border: none;
-  border-radius: 5px;
-  color: #fff;
 }
 
 .sub-hero {
@@ -278,7 +331,8 @@ header button {
 }
 
 .projects-cont div.card-cont {
-  height: 200px;
+  padding: 0;
+  height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -289,6 +343,7 @@ header button {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  overflow: hidden;
 }
 
 .projects-cont div.card-cont:last-child {
@@ -299,13 +354,21 @@ header button {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-flow: column nowrap;
-          flex-flow: column nowrap;
-  -webkit-box-align: end;
-      -ms-flex-align: end;
-          align-items: flex-end;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 30px;
+}
+
+.projects-cont div.card-cont div.icons {
+  padding: 0;
 }
 
 .projects-cont div.card-cont div img {
@@ -313,15 +376,37 @@ header button {
   position: relative;
   right: initial;
   bottom: initial;
-  margin-bottom: 10px;
+  margin-right: 10px;
 }
 
-.projects-cont div.card-cont#sport {
-  background: url("./assets/elegant-vehicle-website-image.jpg");
-  background-size: contain;
-  background-position-y: bottom;
-  background-repeat: no-repeat;
-  background-color: #00A3FF;
+.projects-cont div.card-cont img.featured {
+  width: 100%;
+  height: auto;
+  position: relative;
+  right: initial;
+  bottom: initial;
+}
+
+.project-cta {
+  background-color: #797979;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  justify-self: flex-end;
+}
+
+.project-cta h2 {
+  font-size: 37px;
+  color: #fff;
+  margin-bottom: 50px;
+}
+
+.project-cta button {
+  float: right;
 }
 
 .blank {

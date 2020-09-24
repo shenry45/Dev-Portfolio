@@ -5,23 +5,26 @@ import ArrowRight from '../assets/arrow-right-thin.svg';
 
 const PortfolioCard = (props) => {
     return (
-        <div className="card-cont" id={props.imageID}>
-            <h3>{props.title}</h3>
+        <div className="card-cont" >
+            <img src={props.image} className="featured" alt="portfolio display" />
             <div>
-                {
-                    props.github ? (
-                        <a href={props.github}>
-                            <img src={GithubIcon} alt="Card" />
-                        </a>
-                    ) : null
-                }
-                {
-                    props.hosted ? (
-                        <a href={props.hosted}>
-                            <img src={ArrowRight} alt="Card" />
-                        </a>
-                    ) : null
-                }
+                <h3>{props.title}</h3>
+                <div className="icons">
+                    {
+                        props.github ? (
+                            <a href={props.github}>
+                                <img src={GithubIcon} alt="Card" />
+                            </a>
+                        ) : null
+                    }
+                    {
+                        props.hosted ? (
+                            <a href={props.hosted}>
+                                <img src={ArrowRight} alt="Card" />
+                            </a>
+                        ) : null
+                    }
+                </div>
             </div>
         </div>
     )

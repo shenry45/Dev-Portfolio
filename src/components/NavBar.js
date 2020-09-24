@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 import MenuIcon from '../assets/menu-icon.svg';
+import MenuCloseIcon from '../assets/arrow-down.svg';
 
 const NavBar = () => {
     const [menu, toggleMenu] = useState(false);
@@ -25,14 +26,18 @@ const NavBar = () => {
                 </button>
                 { menu ?
                         <div className="modal-menu">
-                            <Link to="/projects" onClick={() => toggleMenu(!menu)}>
-                                <button>PROJECTS</button>
+                            <img src={MenuCloseIcon} onClick={() => toggleMenu(!menu)} alt="Close menu" />
+                            <Link to="/" onClick={() => toggleMenu(!menu)}>
+                                <button>Home</button>
+                            </Link>
+                            <Link to="/projects2" onClick={() => toggleMenu(!menu)}>
+                                <button>Projects</button>
                             </Link>
                             <Link to="/about" onClick={() => toggleMenu(!menu)}>
-                                <button>ABOUT</button>
+                                <button>About</button>
                             </Link>
-                            <Link to="/contact" onClick={() => toggleMenu(!menu)}>
-                                <button>CONTACT</button>
+                            <Link to="/contact2" onClick={() => toggleMenu(!menu)}>
+                                <button>Contact</button>
                             </Link>
                         </div>
                     :
