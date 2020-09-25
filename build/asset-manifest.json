@@ -1,28 +1,34 @@
 {
   "files": {
-    "main.css": "/static/css/main.0333697d.chunk.css",
-    "main.js": "/static/js/main.f03ed72c.chunk.js",
-    "main.js.map": "/static/js/main.f03ed72c.chunk.js.map",
+    "main.css": "/static/css/main.2689a9f6.chunk.css",
+    "main.js": "/static/js/main.4d2b4c67.chunk.js",
+    "main.js.map": "/static/js/main.4d2b4c67.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
-    "static/js/2.5ae615c4.chunk.js": "/static/js/2.5ae615c4.chunk.js",
-    "static/js/2.5ae615c4.chunk.js.map": "/static/js/2.5ae615c4.chunk.js.map",
+    "static/js/2.7ece7b02.chunk.js": "/static/js/2.7ece7b02.chunk.js",
+    "static/js/2.7ece7b02.chunk.js.map": "/static/js/2.7ece7b02.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.35a32d311d64821066e17d0395767d31.js": "/precache-manifest.35a32d311d64821066e17d0395767d31.js",
+    "precache-manifest.b3293cca208f3828971ae3aac7cc10ba.js": "/precache-manifest.b3293cca208f3828971ae3aac7cc10ba.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.0333697d.chunk.css.map": "/static/css/main.0333697d.chunk.css.map",
-    "static/js/2.5ae615c4.chunk.js.LICENSE.txt": "/static/js/2.5ae615c4.chunk.js.LICENSE.txt",
+    "static/css/main.2689a9f6.chunk.css.map": "/static/css/main.2689a9f6.chunk.css.map",
+    "static/js/2.7ece7b02.chunk.js.LICENSE.txt": "/static/js/2.7ece7b02.chunk.js.LICENSE.txt",
     "static/media/about-shawn-henry-portrait.jpg": "/static/media/about-shawn-henry-portrait.9849e15e.jpg",
+    "static/media/arrow-down.svg": "/static/media/arrow-down.bffbf535.svg",
+    "static/media/arrow-right-thin.svg": "/static/media/arrow-right-thin.87a18ab1.svg",
     "static/media/concert-searcher-show-image.jpg": "/static/media/concert-searcher-show-image.a3911117.jpg",
     "static/media/elegant-vehicle-website-image.jpg": "/static/media/elegant-vehicle-website-image.554bed42.jpg",
-    "static/media/combined.scss": "/static/media/full-stack-developer-text.03c5c94a.svg",
+    "static/media/email.svg": "/static/media/email.6af2b9ec.svg",
+    "static/media/github-white.svg": "/static/media/github-white.17e63f41.svg",
+    "static/media/github.svg": "/static/media/github.617870e4.svg",
     "static/media/jet-ski-parts-image.jpg": "/static/media/jet-ski-parts-image.6d2c0bb4.jpg",
+    "static/media/linkedin.svg": "/static/media/linkedin.619231ff.svg",
+    "static/media/menu-icon.svg": "/static/media/menu-icon.acae7cae.svg",
     "static/media/neighborhood-library-show-image.jpg": "/static/media/neighborhood-library-show-image.21ffce0f.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
-    "static/js/2.5ae615c4.chunk.js",
-    "static/css/main.0333697d.chunk.css",
-    "static/js/main.f03ed72c.chunk.js"
+    "static/js/2.7ece7b02.chunk.js",
+    "static/css/main.2689a9f6.chunk.css",
+    "static/js/main.4d2b4c67.chunk.js"
   ]
 }
