@@ -221,7 +221,7 @@ header div.modal-menu img {
   color: #fff;
 }
 
-.story {
+section.story {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,12 +232,12 @@ header div.modal-menu img {
   background-color: #474747;
 }
 
-.story iframe {
+section.story iframe {
   width: 60%;
   height: 187px;
 }
 
-.story div {
+section.story div {
   height: 187px;
   padding-left: 15px;
   display: -webkit-box;
@@ -252,29 +252,29 @@ header div.modal-menu img {
           justify-content: space-between;
 }
 
-.story div p.accent {
+section.story div p.accent {
   margin: 0;
 }
 
-.story h2 {
+section.story h2 {
   font-size: 37px;
   color: #fff;
 }
 
-.experience h2 {
+section.experience h2 {
   font-size: 38px;
   margin-bottom: 30px;
 }
 
-.experience ul {
+section.experience ul {
   list-style: none;
 }
 
-.experience ul li {
+section.experience ul li {
   margin-bottom: 10px;
 }
 
-.social {
+section.social {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -292,12 +292,12 @@ header div.modal-menu img {
   padding: 15px 30px;
 }
 
-.social p {
+section.social p {
   margin-bottom: 0;
   width: 30%;
 }
 
-.social div {
+section.social div {
   height: 40px;
   width: 70%;
   display: -webkit-box;
@@ -312,19 +312,19 @@ header div.modal-menu img {
           justify-content: flex-end;
 }
 
-.social div p.accent {
+section.social div p.accent {
   width: auto;
   height: 100%;
 }
 
-.social div a {
+section.social div a {
   width: 40px;
   margin-right: 10px;
   border-radius: 5px;
   background: white;
 }
 
-.social div img {
+section.social div img {
   width: 100%;
   height: 100%;
   padding: 8px;
@@ -407,6 +407,103 @@ header div.modal-menu img {
 
 .project-cta button {
   float: right;
+}
+
+section.about img {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+section.about .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.about .icons p {
+  margin-bottom: 20px;
+}
+
+section.about .icons div {
+  position: relative;
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+  background-color: #E5E5E5;
+  overflow: hidden;
+  font-style: italic;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: row nowrap;
+          flex-flow: row nowrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+section.about .icons div.active {
+  width: 55%;
+  background-color: #797979;
+  color: #fff;
+  font-weight: normal;
+}
+
+section.about .icons div span {
+  margin: 0 17px;
+  color: #00A3FF;
+  font-weight: bold;
+}
+
+section.contact h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+section.contact form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column nowrap;
+          flex-flow: column nowrap;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section.contact label, section.contact input, section.contact textarea {
+  display: block;
+  width: 100%;
+  margin-bottom: 5px;
+}
+
+section.contact input, section.contact textarea {
+  border: 1px solid #000;
+  font-size: 16px;
+  border-radius: 5px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+section.contact label {
+  font-size: 20px;
+}
+
+section.contact button {
+  width: 65%;
 }
 
 .blank {

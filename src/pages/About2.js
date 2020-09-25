@@ -1,18 +1,18 @@
 import React from 'react';
 
 import SubHero from '../components/SubHero';
-import ContactForm from '../components/ContactForm';
 import Social from '../components/Social';
+import AboutInfo from '../components/AboutInfo';
 
-const Contact = () => {
+const About2 = () => {
     return (
         <>
-            <SubHero title="Contact" />
-            <ContactForm />
+            <SubHero title="About" />
+            <AboutInfo />
             <Social />
             <p className="blank"></p>
         </>
     )
 }
-
-export default Contact;
+   
+export default About2;

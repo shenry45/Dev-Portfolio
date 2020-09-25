@@ -197,7 +197,7 @@ header {
     }
 }
 
-.story {
+section.story {
     display: flex;
     flex-flow: row nowrap;
     background-color: #474747;
@@ -225,7 +225,7 @@ header {
     }
 }
 
-.experience {
+section.experience {
     h2 {
         font-size: 38px;
         margin-bottom: 30px;
@@ -240,7 +240,7 @@ header {
     }
 }
 
-.social {
+section.social {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
@@ -340,6 +340,85 @@ header {
 
     button {
         float: right;
+    }
+}
+
+section.about {
+    img {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .icons {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        div {
+            position: relative;
+            width: 40px;
+            height: 40px;
+            border-radius: 25px;
+            background-color: #E5E5E5;
+            overflow: hidden;
+            font-style: italic;
+            display: flex;
+            flex-flow: row nowrap;
+            align-items: center;
+            transition: 0.2s;
+
+            &.active {
+                width: 55%;
+                background-color: #797979;
+                color: #fff;
+                font-weight: normal;
+            }
+
+            span {
+                margin: 0 17px;
+                color: $color-primary;
+                font-weight: bold;
+            }
+        }
+    }
+}
+
+section.contact {    
+    h2 {
+        font-size: 35px;
+        margin-bottom: 20px;
+    }
+    
+    form {
+        display: flex;
+        flex-flow: column nowrap;
+        align-items: flex-end;
+    }
+
+    label, input, textarea {
+        display: block;
+        width: 100%;
+        margin-bottom: 5px;
+    }
+
+    input, textarea {
+        border: 1px solid #000;
+        font-size: 16px;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 10px;
+    }
+
+    label {
+        font-size: 20px;
+    }
+
+    button {
+        width: 65%;
     }
 }
 

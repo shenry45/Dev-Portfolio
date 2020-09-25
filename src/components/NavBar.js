@@ -30,13 +30,13 @@ const NavBar = () => {
                             <Link to="/" onClick={() => toggleMenu(!menu)}>
                                 <button>Home</button>
                             </Link>
-                            <Link to="/projects2" onClick={() => toggleMenu(!menu)}>
+                            <Link to="/projects" onClick={() => toggleMenu(!menu)}>
                                 <button>Projects</button>
                             </Link>
                             <Link to="/about" onClick={() => toggleMenu(!menu)}>
                                 <button>About</button>
                             </Link>
-                            <Link to="/contact2" onClick={() => toggleMenu(!menu)}>
+                            <Link to="/contact" onClick={() => toggleMenu(!menu)}>
                                 <button>Contact</button>
                             </Link>
                         </div>
