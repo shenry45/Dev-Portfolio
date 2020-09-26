@@ -5,7 +5,7 @@ import ArrowRight from '../assets/arrow-right-thin.svg';
 const Cards = () => {
     return (
         <section className="cards">
-            <a href="/design-board">
+            <a href="https://www.deviantart.com/containement" target="blank">
             <div className="card-cont">
                 <h3>Design Board</h3>
                 <img src={ArrowRight} alt="Card" />

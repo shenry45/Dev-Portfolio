@@ -5,8 +5,8 @@
           box-sizing: border-box;
 }
 
-html {
-  height: 100vh;
+body {
+  width: 100%;
 }
 
 body, div, input, form, textarea, li, h1, h2, h3, h4, h5, h6, p, aside, label, span, a, button {
@@ -515,6 +515,32 @@ section.contact button {
 
 .desktop {
   display: none;
+}
+
+@media (min-width: 450px) {
+  body {
+    max-width: 450px;
+    background-color: #fff;
+  }
+  html {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #242424;
+  }
+  header {
+    max-width: 450px;
+  }
+  header div.modal-menu {
+    max-width: 450px;
+    left: calc((100% - 450px) / 2);
+  }
 }
 
 @media (min-width: 800px) {

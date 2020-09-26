@@ -7,9 +7,7 @@ $color-primary: #00A3FF;
     box-sizing: border-box;
 }
 
-html {
-    height: 100vh;
-}
+body {width: 100%;}
 
 body, div, input, form, textarea, li, h1, h2, h3, h4, h5, h6, p, aside, label, span, a, button {
     font-family: 'Montserrat', Helvetica, Arial, sans-serif;
@@ -429,6 +427,27 @@ section.contact {
     margin: 0;
 }
 .desktop {display: none}
+
+@media (min-width: 450px) {
+    body {
+        max-width: 450px;
+        background-color: #fff;
+    }
+    html {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #242424;
+    }
+    header {
+        max-width: 450px;
+
+        div.modal-menu {
+            max-width: 450px;
+            left: calc((100% - 450px) / 2);
+        }
+    }
+}
 
 @media (min-width: $tablet) {
     .desktop {
