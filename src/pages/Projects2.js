@@ -1,6 +1,7 @@
 import React from 'react';
-import PortfolioCard from '../components/PortfolioCard';
+import { Link } from 'react-router-dom';
 
+import PortfolioCard from '../components/PortfolioCard';
 import SubHero from '../components/SubHero';
 import Social from '../components/Social';
 import Button from '../components/Button';
@@ -42,9 +43,9 @@ const Projects2 = () => {
             <section className="project-cta">
                 <h2>Now, what do you think?</h2>
                 
-                <a href="/contact" rel="">
+                <Link to="/contact">
                     <Button title="Contact Me"/>
-                </a>
+                </Link>
             </section>
             <Social />
             <p className="blank"></p>
