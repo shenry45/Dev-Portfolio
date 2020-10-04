@@ -35,6 +35,10 @@ button {
     border: none;
     border-radius: 5px;
     color: #fff;
+
+    &:hover {
+        background: darken($color-primary, 10%);
+    }
 }
 
 a {
@@ -73,6 +77,12 @@ header {
     background: #fff;
     border-top: 1px solid #8D8D8D;
 
+    .mobile button {
+        &:hover {
+            background: #fff;
+        }
+    }
+
     p {
         margin-bottom: 0;
 
@@ -97,6 +107,10 @@ header {
         position: fixed;
         bottom: 0;
         left: 0;
+        -webkit-transition: all 0.1s linear;
+        -moz-transition: all 0.1s linear;
+        -o-transition: all 0.1s linear;
+        transition: all 0.1s linear;
 
         &.closed {
             height: 0px;

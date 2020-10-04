@@ -37,6 +37,10 @@ button {
   color: #fff;
 }
 
+button:hover {
+  background: #0082cc;
+}
+
 a {
   text-decoration: none;
   color: #000;
@@ -85,6 +89,10 @@ header {
   border-top: 1px solid #8D8D8D;
 }
 
+header .mobile button:hover {
+  background: #fff;
+}
+
 header p {
   margin-bottom: 0;
 }
@@ -116,6 +124,8 @@ header div.modal-menu {
   position: fixed;
   bottom: 0;
   left: 0;
+  -webkit-transition: all 0.1s linear;
+  transition: all 0.1s linear;
 }
 
 header div.modal-menu.closed {

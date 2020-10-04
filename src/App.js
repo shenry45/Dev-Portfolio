@@ -11,7 +11,6 @@ import Projects2 from './pages/Projects2.js'
 import Contact2 from './pages/Contact2.js';
 import About2 from './pages/About2.js';
 
-
 import Header from './components/Header.js';
 
 function App() {
