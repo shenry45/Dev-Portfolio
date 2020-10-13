@@ -35,10 +35,12 @@ button {
   border: none;
   border-radius: 5px;
   color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 button:hover {
-  background: #0082cc;
+  background: #0093e6;
 }
 
 a {
@@ -149,6 +151,7 @@ header div.modal-menu button {
 }
 
 header div.modal-menu img {
+  cursor: pointer;
   text-align: right;
   width: 70px;
   padding: 10px 25px;
@@ -229,6 +232,16 @@ header div.modal-menu img {
   right: 15px;
   bottom: 15px;
   color: #fff;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.cards div.card-cont:hover {
+  background: #0093e6;
+}
+
+.cards div.card-cont:hover img {
+  right: 10px;
 }
 
 section.story {
@@ -332,6 +345,12 @@ section.social div a {
   margin-right: 10px;
   border-radius: 5px;
   background: white;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+section.social div a:hover {
+  width: 80px;
 }
 
 section.social div img {
@@ -374,17 +393,28 @@ section.social div img {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 10px 30px;
+  padding: 10px;
 }
 
 .projects-cont div.card-cont div.icons {
   padding: 0;
 }
 
+.projects-cont div.card-cont div a {
+  position: relative;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  right: 0;
+}
+
+.projects-cont div.card-cont div a:hover {
+  right: -2px;
+}
+
 .projects-cont div.card-cont div img {
   width: 27px;
   position: relative;
-  right: initial;
+  right: 0;
   bottom: initial;
   margin-right: 10px;
 }
@@ -395,6 +425,14 @@ section.social div img {
   position: relative;
   right: initial;
   bottom: initial;
+}
+
+.projects-cont div.card-cont:hover {
+  background: #00A3FF;
+}
+
+.projects-cont div.card-cont:hover img {
+  right: initial;
 }
 
 .project-cta {
@@ -442,8 +480,10 @@ section.about .icons p {
 }
 
 section.about .icons div {
+  cursor: pointer;
   position: relative;
   width: 40px;
+  min-width: 40px;
   height: 40px;
   border-radius: 25px;
   background-color: #E5E5E5;
@@ -464,7 +504,7 @@ section.about .icons div {
 }
 
 section.about .icons div.active {
-  width: 55%;
+  width: 50%;
   background-color: #797979;
   color: #fff;
   font-weight: normal;

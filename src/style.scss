@@ -35,9 +35,10 @@ button {
     border: none;
     border-radius: 5px;
     color: #fff;
+    transition: 0.2s;
 
     &:hover {
-        background: darken($color-primary, 10%);
+        background: darken($color-primary, 5%);
     }
 }
 
@@ -133,6 +134,7 @@ header {
         }
 
         img {
+            cursor: pointer;
             text-align: right;
             width: 70px;
             padding: 10px 25px;
@@ -205,6 +207,15 @@ header {
             right: 15px;
             bottom: 15px;
             color: #fff;
+            transition: 0.2s;
+        }
+
+        &:hover {
+            background: darken($color-primary, 5%);
+
+            img {
+                right: 10px;
+            }
         }
     }
 }
@@ -282,6 +293,11 @@ section.social {
             margin-right: 10px;
             border-radius: 5px;
             background: white;
+            transition: 0.5s;
+
+            &:hover {
+                width: 80px;
+            }
         }
 
         img {
@@ -311,16 +327,26 @@ section.social {
             flex-flow: row nowrap;
             justify-content: space-between;
             align-items: center;
-            padding: 10px 30px;
+            padding: 10px;
 
             &.icons {
                 padding: 0;
             }
 
+            a {
+                position: relative;
+                transition: 0.5s;
+                right: 0;
+
+                &:hover {
+                    right: -2px;
+                }
+            }
+
             img {
                 width: 27px;
                 position: relative;
-                right: initial;
+                right: 0;
                 bottom: initial;
                 margin-right: 10px;
             }
@@ -333,6 +359,14 @@ section.social {
             position: relative;
             right: initial;
             bottom: initial;
+        }
+
+        &:hover {
+            background: $color-primary;
+
+            img {
+                right: initial;
+            }
         }
     }
 
@@ -371,8 +405,10 @@ section.about {
         }
 
         div {
+            cursor: pointer;
             position: relative;
             width: 40px;
+            min-width: 40px;
             height: 40px;
             border-radius: 25px;
             background-color: #E5E5E5;
@@ -384,7 +420,7 @@ section.about {
             transition: 0.2s;
 
             &.active {
-                width: 55%;
+                width: 50%;
                 background-color: #797979;
                 color: #fff;
                 font-weight: normal;
