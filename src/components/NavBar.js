@@ -9,7 +9,10 @@ const NavBar = () => {
 
     return (
         <nav>
-            {/* <div className="desktop">
+            <div className="desktop">
+                <Link to="/">
+                    <button>HOME</button>
+                </Link>
                 <Link to="/projects">
                     <button>PROJECTS</button>
                 </Link>
@@ -19,7 +22,7 @@ const NavBar = () => {
                 <Link to="/contact">
                     <button>CONTACT</button>
                 </Link>
-            </div> */}
+            </div>
             <div className="mobile">
                 <button onClick={() => toggleMenu(!menu)}>
                     <img src={MenuIcon} alt="menu icon" />

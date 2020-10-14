@@ -12,14 +12,14 @@ const PortfolioCard = (props) => {
                 <div className="icons">
                     {
                         props.github ? (
-                            <a href={props.github}>
+                            <a href={props.github} target="_blank" rel="noreferrer noopener">
                                 <img src={GithubIcon} alt="Card" />
                             </a>
                         ) : null
                     }
                     {
                         props.hosted ? (
-                            <a href={props.hosted}>
+                            <a href={props.hosted} target="_blank" rel="noreferrer noopener">
                                 <img src={ArrowRight} alt="Card" />
                             </a>
                         ) : null

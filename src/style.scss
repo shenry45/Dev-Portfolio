@@ -500,8 +500,84 @@ section.contact {
 }
 
 @media (min-width: $tablet) {
+    body {
+        max-width: 100%;
+    }
+
+    section {
+        padding: 7.0rem 30px;
+
+        &.cards {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-between;
+
+            a {
+                width: 47.5%;
+            }
+
+            
+        }
+
+        &.projects-cont {
+            flex-flow: wrap;
+
+            .card-cont {
+                width: 47.5%;
+            }
+        }
+
+        &.about {
+            img {
+                width: 50%;
+                margin: 0 auto;
+                margin-bottom: 20px;
+            }
+        }
+
+        &.story iframe {
+            height: 300px;
+        }
+
+        &.experience {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+    }
+
+    .hero {
+        justify-content: flex-start;
+
+        h1 {
+            width: 100%;
+            text-align: left;
+        }
+    }
+
+    header {
+        max-width: 100%;
+        position: relative;
+
+        button {
+            color: #000;
+            padding: 0px 10px;
+            font-weight: normal;
+            
+            &:hover {
+                background-color: #f2f2f2;
+            }
+        }
+    }
+    
+    .blank {
+        height: 0;
+    }
     .desktop {
         display: block;
+    }
+    .mobile {
+        display: none;
     }
 }
 

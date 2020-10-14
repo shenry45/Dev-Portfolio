@@ -594,8 +594,81 @@ section.contact button {
 }
 
 @media (min-width: 800px) {
+  body {
+    max-width: 100%;
+  }
+  section {
+    padding: 7.0rem 30px;
+  }
+  section.cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  section.cards a {
+    width: 47.5%;
+  }
+  section.projects-cont {
+    -ms-flex-flow: wrap;
+        flex-flow: wrap;
+  }
+  section.projects-cont .card-cont {
+    width: 47.5%;
+  }
+  section.about img {
+    width: 50%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  section.story iframe {
+    height: 300px;
+  }
+  section.experience {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .hero {
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  .hero h1 {
+    width: 100%;
+    text-align: left;
+  }
+  header {
+    max-width: 100%;
+    position: relative;
+  }
+  header button {
+    color: #000;
+    padding: 0px 10px;
+    font-weight: normal;
+  }
+  header button:hover {
+    background-color: #f2f2f2;
+  }
+  .blank {
+    height: 0;
+  }
   .desktop {
     display: block;
+  }
+  .mobile {
+    display: none;
   }
 }
 
