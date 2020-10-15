@@ -513,10 +513,9 @@ section.contact {
             justify-content: space-between;
 
             a {
-                width: 47.5%;
+                margin-right: 30px;
+                width: 100%;
             }
-
-            
         }
 
         &.projects-cont {
@@ -528,10 +527,22 @@ section.contact {
         }
 
         &.about {
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+
+            &>div {width: 30%;}
+
             img {
-                width: 50%;
-                margin: 0 auto;
-                margin-bottom: 20px;
+                width: 25%;
+            }
+
+            .icons {
+                width: 20%;
+                flex-direction: column;
+                justify-content: flex-start;
+
+                div {margin-bottom: 30px;}
             }
         }
 
@@ -543,6 +554,11 @@ section.contact {
             display: flex;
             justify-content: space-around;
             align-items: center;
+        }
+
+        &.contact, &.details {
+            width: 50%;
+            margin: 0 auto;
         }
     }
 

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 import ArrowRight from '../assets/arrow-right-thin.svg';
 
@@ -11,6 +12,12 @@ const Cards = () => {
                 <img src={ArrowRight} alt="Card" />
             </div>
             </a> 
+            <Link href="/containement">
+                <div className="card-cont">
+                    <h3>About</h3>
+                    <img src={ArrowRight} alt="Card" />
+                </div>
+            </Link> 
             <a href="https://github.com/shenry45">
                 <div className="card-cont">
                     <h3>Portfolio</h3>

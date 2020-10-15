@@ -9,7 +9,7 @@ const Contact = () => {
         <>
             <SubHero title="Contact" />
             <ContactForm />
-            <section>
+            <section class="details">
                 <h3>My Info:</h3>    
                 <p>Email: shawn45henry@gmail.com</p>
                 <p>Location: Lake Havasu City, AZ (accepting remote roles)</p>
