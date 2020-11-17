@@ -186,7 +186,7 @@ header div.modal-menu img {
 
 .hero p {
   width: 100%;
-  color: #e5e5e5;
+  color: #fff;
   font-size: 15px;
   margin-bottom: 10px;
 }
@@ -242,6 +242,10 @@ header div.modal-menu img {
 
 .cards div.card-cont:hover img {
   right: 10px;
+}
+
+.cards a {
+  margin-left: 10px;
 }
 
 section.story {
@@ -396,6 +400,10 @@ section.social div img {
   padding: 10px;
 }
 
+.projects-cont div.card-cont div h3 {
+  max-width: 70%;
+}
+
 .projects-cont div.card-cont div.icons {
   padding: 0;
 }
@@ -416,7 +424,6 @@ section.social div img {
   position: relative;
   right: 0;
   bottom: initial;
-  margin-right: 10px;
 }
 
 .projects-cont div.card-cont img.featured {
@@ -458,6 +465,7 @@ section.social div img {
 }
 
 section.about img {
+  max-height: 347px;
   width: 100%;
   margin-bottom: 20px;
 }
@@ -613,7 +621,8 @@ section.contact button {
             justify-content: space-between;
   }
   section.cards a {
-    width: 47.5%;
+    margin-left: 10px;
+    width: 100%;
   }
   section.projects-cont {
     -ms-flex-flow: wrap;
@@ -622,10 +631,36 @@ section.contact button {
   section.projects-cont .card-cont {
     width: 47.5%;
   }
+  section.about {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-flow: row nowrap;
+            flex-flow: row nowrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  section.about > div {
+    width: 30%;
+  }
   section.about img {
-    width: 50%;
-    margin: 0 auto;
-    margin-bottom: 20px;
+    width: auto;
+  }
+  section.about .icons {
+    width: 20%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+  }
+  section.about .icons div {
+    margin-bottom: 30px;
   }
   section.story iframe {
     height: 300px;
@@ -639,6 +674,10 @@ section.contact button {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+  }
+  section.contact, section.details {
+    width: 50%;
+    margin: 0 auto;
   }
   .hero {
     -webkit-box-pack: start;

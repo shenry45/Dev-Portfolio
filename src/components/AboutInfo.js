@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-import Headshot from '../assets/about-shawn-henry-portrait.jpg';
+import Headshot from '../assets/shawn-henry-headshot.jpg';
 
 const AboutInfo = () => {
     const [activeIcon, changeCurrentIcon] = useState("adv");

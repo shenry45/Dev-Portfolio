@@ -218,6 +218,10 @@ header {
             }
         }
     }
+
+    a {
+        margin-left: 10px;
+    }
 }
 
 section.story {
@@ -329,6 +333,10 @@ section.social {
             align-items: center;
             padding: 10px;
 
+            h3 {
+                max-width: 70%;
+            }
+
             &.icons {
                 padding: 0;
             }
@@ -348,7 +356,7 @@ section.social {
                 position: relative;
                 right: 0;
                 bottom: initial;
-                margin-right: 10px;
+                // margin-right: 10px;
             }
 
         }
@@ -391,6 +399,7 @@ section.social {
 
 section.about {
     img {
+        max-height: 347px;
         width: 100%;
         margin-bottom: 20px;
     }
@@ -513,7 +522,7 @@ section.contact {
             justify-content: space-between;
 
             a {
-                margin-right: 30px;
+                margin-left: 10px;
                 width: 100%;
             }
         }
@@ -534,7 +543,7 @@ section.contact {
             &>div {width: 30%;}
 
             img {
-                width: 25%;
+                width: auto;
             }
 
             .icons {
