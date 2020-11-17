@@ -19,6 +19,7 @@ const Projects2 = () => {
                 <PortfolioCard
                     title="Sports Car Showcase"
                     github="https://github.com/shenry45/MotoElegance"
+                    hosted="https://motoelegance.netlify.app/"
                     image={SportsCar}
                 />
                 <PortfolioCard

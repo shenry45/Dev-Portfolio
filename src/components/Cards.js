@@ -12,7 +12,7 @@ const Cards = () => {
                 <img src={ArrowRight} alt="Card" />
             </div>
             </a> 
-            <Link href="/containement">
+            <Link to="/about">
                 <div className="card-cont">
                     <h3>About</h3>
                     <img src={ArrowRight} alt="Card" />
