@@ -8,7 +8,7 @@ import Social from '../components/Social';
 
 const HomeVersion2 = () => {
     return (
-        <div>
+        <div id="home">
             <Hero />
             <Cards />
             <Story />

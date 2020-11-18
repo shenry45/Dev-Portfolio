@@ -37,7 +37,7 @@ const ContactForm = () => {
                         e.preventDefault();
 
                         if (!name || !email || !message) {
-                            alert('please fill out all fields.')
+                            alert('Please fill in all the form fields.')
                             return
                         }
 
