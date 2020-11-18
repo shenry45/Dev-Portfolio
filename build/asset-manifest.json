@@ -1,18 +1,17 @@
 {
   "files": {
-    "main.css": "/static/css/main.8089c2af.chunk.css",
-    "main.js": "/static/js/main.81b14e6e.chunk.js",
-    "main.js.map": "/static/js/main.81b14e6e.chunk.js.map",
+    "main.css": "/static/css/main.ac698eac.chunk.css",
+    "main.js": "/static/js/main.2ca7aa1a.chunk.js",
+    "main.js.map": "/static/js/main.2ca7aa1a.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.19ccc7f6.js",
     "runtime-main.js.map": "/static/js/runtime-main.19ccc7f6.js.map",
     "static/js/2.17490b85.chunk.js": "/static/js/2.17490b85.chunk.js",
     "static/js/2.17490b85.chunk.js.map": "/static/js/2.17490b85.chunk.js.map",
     "index.html": "/index.html",
-    "precache-manifest.a15443f49b85350449730dafc061508c.js": "/precache-manifest.a15443f49b85350449730dafc061508c.js",
+    "precache-manifest.4dc3308fc7202a1ec87335fc58d42f93.js": "/precache-manifest.4dc3308fc7202a1ec87335fc58d42f93.js",
     "service-worker.js": "/service-worker.js",
-    "static/css/main.8089c2af.chunk.css.map": "/static/css/main.8089c2af.chunk.css.map",
+    "static/css/main.ac698eac.chunk.css.map": "/static/css/main.ac698eac.chunk.css.map",
     "static/js/2.17490b85.chunk.js.LICENSE.txt": "/static/js/2.17490b85.chunk.js.LICENSE.txt",
-    "static/media/about-shawn-henry-portrait.jpg": "/static/media/about-shawn-henry-portrait.9849e15e.jpg",
     "static/media/arrow-down.svg": "/static/media/arrow-down.bffbf535.svg",
     "static/media/arrow-right-thin.svg": "/static/media/arrow-right-thin.87a18ab1.svg",
     "static/media/concert-searcher-show-image.jpg": "/static/media/concert-searcher-show-image.a3911117.jpg",
@@ -23,12 +22,13 @@
     "static/media/jet-ski-parts-image.jpg": "/static/media/jet-ski-parts-image.6d2c0bb4.jpg",
     "static/media/linkedin.svg": "/static/media/linkedin.619231ff.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.acae7cae.svg",
-    "static/media/neighborhood-library-show-image.jpg": "/static/media/neighborhood-library-show-image.21ffce0f.jpg"
+    "static/media/neighborhood-library-show-image.jpg": "/static/media/neighborhood-library-show-image.21ffce0f.jpg",
+    "static/media/shawn-henry-headshot.jpg": "/static/media/shawn-henry-headshot.a87f54c8.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.19ccc7f6.js",
     "static/js/2.17490b85.chunk.js",
-    "static/css/main.8089c2af.chunk.css",
-    "static/js/main.81b14e6e.chunk.js"
+    "static/css/main.ac698eac.chunk.css",
+    "static/js/main.2ca7aa1a.chunk.js"
   ]
 }

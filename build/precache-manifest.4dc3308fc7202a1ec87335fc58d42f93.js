@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "171ea967b26716f3c3b4d75d8a5f686c",
+    "revision": "a1aee5f58859384999b3c552d899e254",
     "url": "/index.html"
   },
   {
-    "revision": "835efd8e597b4ae45706",
-    "url": "/static/css/main.8089c2af.chunk.css"
+    "revision": "c2eda22bea5905d94b59",
+    "url": "/static/css/main.ac698eac.chunk.css"
   },
   {
     "revision": "76a1391f68a7e40b9bc7",
@@ -16,16 +16,12 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/static/js/2.17490b85.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "835efd8e597b4ae45706",
-    "url": "/static/js/main.81b14e6e.chunk.js"
+    "revision": "c2eda22bea5905d94b59",
+    "url": "/static/js/main.2ca7aa1a.chunk.js"
   },
   {
     "revision": "4f2b1704eab49d50853b",
     "url": "/static/js/runtime-main.19ccc7f6.js"
-  },
-  {
-    "revision": "9849e15ea586f8967fad1c021082dbd8",
-    "url": "/static/media/about-shawn-henry-portrait.9849e15e.jpg"
   },
   {
     "revision": "bffbf53532a8838b1eb95f464e5bc5df",
@@ -70,5 +66,9 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "21ffce0fffb4bfb9cb32a888591882c9",
     "url": "/static/media/neighborhood-library-show-image.21ffce0f.jpg"
+  },
+  {
+    "revision": "a87f54c89510550ca454f6013add59db",
+    "url": "/static/media/shawn-henry-headshot.a87f54c8.jpg"
   }
 ]);
