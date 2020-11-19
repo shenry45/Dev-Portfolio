@@ -90,10 +90,10 @@ header {
     p {
         margin-bottom: 0;
 
-        &.title a {
-            font-weight: 100;
-            font-style: italic;
-        }
+        // &.title a {
+        //     font-weight: 100;
+        //     font-style: italic;
+        // }
     }
 
     button {
@@ -238,7 +238,7 @@ section.story {
     }
 
     iframe {
-        height: 500px;
+        height: 363px;
     }
 
     div {
@@ -260,10 +260,16 @@ section.story {
 }
 
 section.experience {
+    & > * {
+        width: 50%;
+        padding: 0 20px;
+    }
+
     h2 {
         font-size: 38px;
         margin-bottom: 30px;
     }
+
     ul {
         list-style: none;
 
@@ -360,6 +366,7 @@ section.social {
 
             img {
                 width: 27px;
+                height: 27px;
                 position: relative;
                 right: 0;
                 bottom: initial;
@@ -436,7 +443,7 @@ section.about {
             transition: 0.2s;
 
             &.active {
-                width: 50%;
+                width: 100%;
                 background-color: #797979;
                 color: #fff;
                 font-weight: normal;
@@ -552,7 +559,7 @@ section.contact {
         &.cards {
             display: flex;
             flex-flow: row nowrap;
-            justify-content: space-between;
+            justify-content: space-evenly;
 
             a {
                 margin-left: 10px;
@@ -616,11 +623,11 @@ section.contact {
     header {
         max-width: 100%;
         position: relative;
-        padding: 1.75rem 7.0rem;
+        padding: 1.25rem 7.0rem;
 
         button {
             color: #000;
-            padding: 0px 10px;
+            padding: 10px;
             font-weight: normal;
             
             &:hover {

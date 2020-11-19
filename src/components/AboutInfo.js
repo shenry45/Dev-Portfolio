@@ -14,17 +14,17 @@ const AboutInfo = () => {
             </div>
             <div className="icons">
                 <div
-                    className={activeIcon === "adv" ? `active`: null}
-                    onClick={() => changeCurrentIcon("adv")}
-                ><span>i</span> Adventure</div>
-                <div
                     className={activeIcon === "snow" ? `active`: null}
                     onClick={() => changeCurrentIcon("snow")}
-                ><span>i</span> Snowboarding</div>
+                ><span>i</span> Off Roader</div>
                 <div 
                     className={activeIcon === "3d" ? `active`: null}
                     onClick={() => changeCurrentIcon("3d")}
-                ><span>i</span> 3D Design</div>
+                ><span>i</span> 3D Designer</div>
+                <div
+                    className={activeIcon === "adv" ? `active`: null}
+                    onClick={() => changeCurrentIcon("adv")}
+                ><span>i</span> Adventurer</div>
                 <div
                     className={activeIcon === "gamer" ? `active`: null}
                     onClick={() => changeCurrentIcon("gamer")}
