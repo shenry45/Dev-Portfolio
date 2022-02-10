@@ -9,7 +9,7 @@
     "caniuse-lite": "^1.0.30001148",
     "dotenv": "^8.2.0",
     "emailjs-com": "^2.6.3",
-    "node-sass": "^4.14.1",
+    "node-sass": "^7.0.0",
     "react": "^17.0.2",
     "react-dev-utils": "^11.0.4",
     "react-dom": "^16.13.1",
